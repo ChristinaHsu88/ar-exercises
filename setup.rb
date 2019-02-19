@@ -3,8 +3,10 @@ require 'active_record'
 require_relative 'lib/store'
 require_relative 'lib/employee'
 
+
 # Output messages from Active Record to standard out
 ActiveRecord::Base.logger = Logger.new(STDOUT)
+
 
 puts 'Establishing connection to database ...'
 ActiveRecord::Base.establish_connection(
@@ -19,6 +21,7 @@ ActiveRecord::Base.establish_connection(
   min_messages: 'error'
 )
 puts 'CONNECTED'
+
 
 puts 'Setting up Database (recreating tables) ...'
 
