@@ -7,11 +7,11 @@ require_relative './exercise_5'
 require_relative './exercise_6'
 require_relative './exercise_7'
 
-puts "Exercise 7"
+puts "Exercise 8"
 puts "----------"
 
 # create employee here
 
 newEmployee = Employee.create!(first_name: "john", last_name: "Hello", hourly_rate: 20, store: @store1)
 
-puts newEmployee.password
+# puts newEmployee.password
